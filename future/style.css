@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    background: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background: #101010;
+    color: #0DB8DE;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background: #101010;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Login Box */
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 80px; /* Adjusted to prevent overlap with header */
+}
+
+.login-box {
+    width: 100%;
+    padding: 20px;
+    background: #101010;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(172, 21, 21, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+}
+
+/* Login Key Icon */
+.login-key {
+    font-size: 80px;
+    line-height: 100px;
+    background: -webkit-linear-gradient(#27EF9F, #0DB8DE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Login Title */
+.login-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ECF0F5;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+/* Form */
+.login-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    background-color: #1A2226;
+    border: none;
+    border-bottom: 2px solid #0DB8DE;
+    font-weight: bold;
+    outline: 0;
+    padding: 12px;
+    color: #4c76aa;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-bottom: 2px solid #0DB8DE;
+}
+
+/* Button */
+.btn-outline-primary {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #0DB8DE;
+    color: #0DB8DE;
+    font-weight: bold;
+    background: none;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0DB8DE;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .login-box {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .login-title {
+        font-size: 22px;
+    }
+
+    .btn-outline-primary {
+        padding: 12px;
+    }
+
+    input[type="email"], input[type="password"] {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

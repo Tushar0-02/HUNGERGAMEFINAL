@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+    <script type="module" src="admin.js"></script>
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Admin Dashboard</h1>
+        
+        <div class="section">
+            <h2>📊 User Activity</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Email</th>
+                        <th>Last Upload</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="userActivityList">
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>🍽 Donations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Food</th>
+                        <th>Quantity</th>
+                        <th>Place</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody id="donationList">
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - HungerGame</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>HUNGERGAME</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="login-box">
+            <div class="login-key">
+                <i class="fa fa-key" aria-hidden="true"></i>
+            </div>
+            <div class="login-title">
+                INTROO+ 
+                <BR>MAKE LIFE EASIER
+            </div>
+            <div class="login-form">
+                <form onsubmit="login(event)">
+                    <div class="form-group">
+                        <label class="form-control-label">EMAIL</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">PASSWORD</label>
+                        <input type="password" id="password" class="form-control" required>
+                    </div>
+                    <p id="error-message" class="error-text"></p>
+                    <button type="submit" class="btn btn-outline-primary">LOGIN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Developed by Tushar Jadhav</p>
+    </footer>
+
+</body>
+</html>

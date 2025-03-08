@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <div class="container">
+        <h2>Donate Food</h2>
+        <input type="text" id="foodType" placeholder="Enter food type">
+        <input type="number" id="quantity" placeholder="Enter quantity">
+        <input type="text" id="place" placeholder="Enter place">
+        <input type="number" id="phone" placeholder="Enter phone number">
+        <input type="datetime-local" id="time">
+        <button onclick="addDonation()">Add Donation</button>
+
+        <h3>Your Donations</h3>
+        <div id="donationList"></div>
+
+        <h3>Notifications</h3>
+        <div id="notificationList"></div>
+    </div>
+    <footer>
+        <p>Developed by Tushar Jadhav</p>
+    </footer>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="donor.js"></script>
+</body>
+</html>
