@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+.admin-container {
+    max-width: 90%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.section {
+    margin: 20px 0;
+}
+h2 {
+    color: #007BFF;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background: #007BFF;
+    color: white;
+}
+.status-online {
+    color: green;
+    font-weight: bold;
+}
+.status-offline {
+    color: red;
+    font-weight: bold;
+}
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+.block-btn {
+    background: red;
+    color: white;
+}

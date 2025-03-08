@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        header {
+            width: 100%;
+            background: #101010;
+            color: #0DB8DE;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 380px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            letter-spacing: 0.5px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .donor {
+            background: linear-gradient(135deg, #43cea2, #185a9d);
+            color: white;
+        }
+        .helper {
+            background: linear-gradient(135deg, #2193b0, #6dd5ed);
+            color: white;
+        }
+        .admin {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: white;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px;
+            }
+            .btn {
+                font-size: 14px;
+                padding: 12px;
+            }
+        }
+        footer {
+            width: 100%;
+            background: #101010;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+          footer {
+                font-size: 14px;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HUNGERGAME</h1>
+    </header>
+    <div class="container">
+        <h2>Welcome to the Dashboard</h2>
+        <button class="btn donor" onclick="location.href='donor.html'">Donor</button>
+        <button class="btn helper" onclick="location.href='helper.html'">Helper</button>
+        <button class="btn admin" onclick="location.href='admin.html'">Admin</button>
+    </div>
+    <footer>
+        <p>Developed by Tushar Jadhav</p>
+    </footer>
+</body>
+</html>
